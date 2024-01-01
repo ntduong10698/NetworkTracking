@@ -123,11 +123,13 @@ class ViewController: UIViewController, WKNavigationDelegate {
                     let timestamp = headers?["timestamp"]
                     let webId = headers?["web-id"]
                     let userSign = headers?["user-sign"]
+                    let anonymousUserId = headers?["anonymous-user-id"]
                     print("------------- BaseRequest --------------")
                     print("Headers: ")
                     print(" timestamp: \(timestamp ?? "empty")")
                     print(" web-id: \(webId ?? "empty")")
                     print(" user-sign: \(userSign ?? "empty")")
+                    print(" anonymous-user-id: \(userSign ?? "empty")")
                 }
             }
         }
